@@ -1,7 +1,10 @@
-#include MAIN_H
-#define_MAIN_H
+#ifndef MAIN_H
+#define MAIN_H
 #include <stdarg.h>
 #include <stdio.h>
+#include <unistd.h>
+#include <string.h>
+#include <limits.h>
 
 int _print(const char *format, ...);
 
