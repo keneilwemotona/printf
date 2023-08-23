@@ -34,7 +34,7 @@ int _printf(const char *format, ...)
 					char *_str = va_arg(args, char *);
 					int len;
 
-					len = strlen(_str);
+					len = _strlen(_str);
 					write(1, _str, len);
 					count_chars += len;
 					break;
