@@ -40,9 +40,7 @@ struct fmt
 typedef struct fmt fmt_t;
 
 int _printf(const char *format, ...);
-<<<<<<< HEAD
-int _strlen(char *s);
-=======
+
 int handle_print(const char *fmt, int *i,
 va_list list, char buffer[], int flags, int width, int precision, int size);
 
@@ -116,6 +114,5 @@ int is_digit(char);
 
 long int convert_size_number(long int num, int size);
 long int convert_size_unsgnd(unsigned long int num, int size);
->>>>>>> 86f597460ebe153fdf3b9940fcd64b53d4b61105
 
 #endif /* MAIN_H */
