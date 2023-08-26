@@ -21,7 +21,7 @@ int print_hexa(va_list args, char map_to[], char buffer[],
 	unsigned long int num = va_arg(args, unsigned long int);
 	unsigned long int init_num = num;
 
-	UNUSED(width0);
+	UNUSED(width);
 
 	num = convert_size_unsgnd(num, size);
 
@@ -42,5 +42,5 @@ int print_hexa(va_list args, char map_to[], char buffer[],
 		buffer[i--] = '0';
 	}
 	i++;
-	return (write_unsgnd(0, i, buffer, flags, width, precision, size));
+	return (write_unsgnd(0, i, buffer, flags, width, prec, size));
 }

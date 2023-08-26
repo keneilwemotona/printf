@@ -33,6 +33,4 @@ int print_unsigned(va_list args, char buffer[], int flags,
 
 	i++;
 	return (write_unsgnd(0, i, buffer, flags, width, prec, size));
-
-	return (handle_write_char(c, buffer, flags, width, prec, size));
 }

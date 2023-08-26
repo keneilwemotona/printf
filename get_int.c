@@ -41,5 +41,5 @@ int print_int(va_list args, char buffer[], int flags,
 	}
 	i++;
 
-	return (write_number(is_negative, i, buffer, flags, prec, size));
+	return (write_number(is_negative, i, buffer, flags, width, prec, size));
 }
